@@ -1,23 +1,16 @@
 /* 
 ////// For this challenge ///////
 
-- You will have to modify the HTML
-
-- You can add new classes in the HTML
-  if you need to
+- All text is in the text.md file
 
 // Requirements
-1. The headings in the first row must be
-   a different color
-2. The two .col at the bottom must go next
-   to one another
-3. The section at the bottom should have
-   a dark background color and a different
-   color of text
-4. I've removed the "gap" that I created,
-   so you'll have to add it back in
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
 
-   */
+*/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -29,12 +22,13 @@ body {
     font-size: 1.3rem;
 }
 
-h1 {
-    font-size: 3rem;
+img {
+    max-width: 100%;
 }
 
-p {
-    line-height: 150%;
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
 }
 
 .container {
@@ -46,7 +40,8 @@ p {
 .row {
     /* display: flex => flex container */
     display: flex;
-
+    justify-content: space-between;
+    
     /* can't use yet */
     /* gap: 100px; */
 }
@@ -56,14 +51,23 @@ p {
     width: 100%;
 }
 
+.col + .col {
+    margin-left: 30px;
+}
+
 .hero {
     padding: 100px 0;
     background-color: #23424A;
     color: #FFF;
 }
 
-.hero__text {
-    width: 60%;
+.hero__text { 
+    width: 62%;
+}
+
+.hero__img {
+    width: 32%;
+    align-self: flex-start;
 }
 
 .hero p {
@@ -84,31 +88,4 @@ p {
 .btn:hover,
 .btn:focus {
     opacity: .75; 
-}
-
-/* Custom styles */
-
-section {
-    padding: 3em 0;
-}
-
-section h2 {
-    font-size: 2.2rem;
-}
-
-.col {
-    text-align: center;
-}
-
-.row .col + .col {
-    margin-left: 30px;
-}
-
-.section--mid .heading {
-    color: #87629A;
-}
-
-.section--bottom {
-    background-color: #136c72;
-    color: #FFF;
 }
