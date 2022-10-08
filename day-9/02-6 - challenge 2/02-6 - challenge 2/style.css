@@ -12,7 +12,9 @@
 
 */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -41,7 +43,7 @@ h1 {
     /* display: flex => flex container */
     display: flex;
     justify-content: space-between;
-    
+
     /* can't use yet */
     /* gap: 100px; */
 }
@@ -51,7 +53,7 @@ h1 {
     width: 100%;
 }
 
-.col + .col {
+.col+.col {
     margin-left: 30px;
 }
 
@@ -61,7 +63,7 @@ h1 {
     color: #FFF;
 }
 
-.hero__text { 
+.hero__text {
     width: 62%;
 }
 
@@ -72,12 +74,14 @@ h1 {
 
 .hero p {
     margin-bottom: 3em;
+    font-size: 1.3rem;
+    line-height: 150%;
 }
 
 .btn {
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     color: #23424A;
     font-weight: 900;
     background-color: #38CFD9;
@@ -87,5 +91,33 @@ h1 {
 
 .btn:hover,
 .btn:focus {
-    opacity: .75; 
+    opacity: .75;
+}
+
+.main-section {
+    margin-top: 2em;
+    gap: 2em;
+}
+
+.main__left-col,
+.main__right-col {
+    width: 100%;
+}
+
+.main__left-col .title {
+    font-size: 2.2rem;
+}
+
+.main__left-col .text-content,
+.main__right-col .text-content {
+    line-height: 150%;
+}
+
+.main__right-col {
+    background-color: #136C72;
+}
+
+.aside__text {
+    text-align: center;
+    color: white;
 }
