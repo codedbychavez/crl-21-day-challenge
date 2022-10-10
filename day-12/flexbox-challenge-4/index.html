@@ -4,31 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Day 12 Challenge</title>
   </head>
   <body>
-    <div class="intro">
-      <div class="container">
-        <div class="intro__text">
-          <p>Lorem ipsum sit</p>
-          <h1>Responsive layouts don't have to be a struggle</h1>
+    <div class="intro row">
+      <div class="intro__text">
+        <div class="container">
+          <p class="intro__text--subtitle">Lorem ipsum sit</p>
+          <h1 class="intro__text--title">
+            Responsive layouts don't have to be a struggle
+          </h1>
         </div>
       </div>
     </div>
     <main>
-      <section>
+      <section class="section section--one">
         <div class="container">
           <div class="section__text">
-            <h2>Quality Designs</h2>
+            <h2 class="section__text--title">Quality Designs</h2>
             <div class="row">
-              <p>
+              <p class="section__text--content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
                 vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu
                 felis. Sociis natoque penatibus et magnis dis.
               </p>
 
-              <p>
+              <p class="section__text--content">
                 Felis donec et odio pellentesque diam volutpat. Aliquam purus
                 sit amet luctus venenatis. Turpis in eu mi bibendum neque
                 egestas congue quisque egestas. Pellentesque sit amet porttitor
@@ -39,39 +42,40 @@
         </div>
       </section>
 
-      <section>
+      <section class="section section--two">
         <div class="container">
           <div class="row">
             <div class="section__text">
-              <h2>Made custom for you</h2>
-              <p>
+              <h2 class="section__text--title">Made custom for you</h2>
+              <p class="section__text--content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
               </p>
             </div>
 
-            <img src="./image-01.jpg" alt="Sunrise" />
+            <img class="section__image" src="./image-01.jpg" alt="Sunrise" />
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="section section--three">
         <div class="container">
           <div class="row">
-            <img src="./image-01.jpg" alt="Sunrise" />
-            
+            <img class="section__image" src="./image-02.jpg" alt="Sunrise" />
+
             <div class="section__text">
-              <h2>Created with care</h2>
-              <p>
-                Felis donec et odio pellentesque diam volutpat. Aliquam purus sit amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue quisque egestas. Pellentesque sit amet porttitor eget dolor morbi non.
+              <h2 class="section__text--title">Created with care</h2>
+              <p class="section__text--content">
+                Felis donec et odio pellentesque diam volutpat. Aliquam purus
+                sit amet luctus venenatis. Turpis in eu mi bibendum neque
+                egestas congue quisque egestas. Pellentesque sit amet porttitor
+                eget dolor morbi non.
               </p>
             </div>
-
           </div>
         </div>
       </section>
-
     </main>
   </body>
 </html>
