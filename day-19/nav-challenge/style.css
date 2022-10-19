@@ -130,7 +130,36 @@ header {
     visibility: visible;
     height: auto;
     position: relative;
-} 
+}
+
+/* Custom styles by me */
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav__list--secondary {
+    margin-top: 2em;
+}
+
+.nav__item {
+    text-transform: uppercase;
+    margin: 1.4em;
+    font-size: .9rem;
+}
+
+.nav__link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav__link--button {
+    background-color: whitesmoke;
+    color: #136c72;
+    padding: .3em .8em;
+    border-radius: 100px;
+}
 
 
 .logo {
@@ -179,6 +208,7 @@ header {
         visibility: visible;
         display: flex;
         height: auto;
+        position: relative;
     }
 
     .row {
